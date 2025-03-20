@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\C\u00E1 nh\u00E2n\\AT\u0026BM\\Hash-SHA-256\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EE9028-46B6-474C-850B-6091FFB6C6AB}|Hash-SHA-256\\Hash-SHA-256.csproj|c:\\c\u00E1 nh\u00E2n\\at\u0026bm\\hash-sha-256\\hash-sha-256\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E3EE9028-46B6-474C-850B-6091FFB6C6AB}|Hash-SHA-256\\Hash-SHA-256.csproj|solutionrelative:hash-sha-256\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EE9028-46B6-474C-850B-6091FFB6C6AB}|Hash-SHA-256\\Hash-SHA-256.csproj|c:\\c\u00E1 nh\u00E2n\\at\u0026bm\\hash-sha-256\\hash-sha-256\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3EE9028-46B6-474C-850B-6091FFB6C6AB}|Hash-SHA-256\\Hash-SHA-256.csproj|solutionrelative:hash-sha-256\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EE9028-46B6-474C-850B-6091FFB6C6AB}|Hash-SHA-256\\Hash-SHA-256.csproj|c:\\c\u00E1 nh\u00E2n\\at\u0026bm\\hash-sha-256\\hash-sha-256\\sha256.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3EE9028-46B6-474C-850B-6091FFB6C6AB}|Hash-SHA-256\\Hash-SHA-256.csproj|solutionrelative:hash-sha-256\\sha256.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SHA256.cs",
+              "DocumentMoniker": "C:\\C\u00E1 nh\u00E2n\\AT\u0026BM\\Hash-SHA-256\\Hash-SHA-256\\SHA256.cs",
+              "RelativeDocumentMoniker": "Hash-SHA-256\\SHA256.cs",
+              "ToolTip": "C:\\C\u00E1 nh\u00E2n\\AT\u0026BM\\Hash-SHA-256\\Hash-SHA-256\\SHA256.cs",
+              "RelativeToolTip": "Hash-SHA-256\\SHA256.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAmwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T00:26:30.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\C\u00E1 nh\u00E2n\\AT\u0026BM\\Hash-SHA-256\\Hash-SHA-256\\Form1.cs",
+              "RelativeDocumentMoniker": "Hash-SHA-256\\Form1.cs",
+              "ToolTip": "C:\\C\u00E1 nh\u00E2n\\AT\u0026BM\\Hash-SHA-256\\Hash-SHA-256\\Form1.cs",
+              "RelativeToolTip": "Hash-SHA-256\\Form1.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T00:22:57.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\C\u00E1 nh\u00E2n\\AT\u0026BM\\Hash-SHA-256\\Hash-SHA-256\\Form1.cs",
+              "RelativeDocumentMoniker": "Hash-SHA-256\\Form1.cs",
+              "ToolTip": "C:\\C\u00E1 nh\u00E2n\\AT\u0026BM\\Hash-SHA-256\\Hash-SHA-256\\Form1.cs [Design]",
+              "RelativeToolTip": "Hash-SHA-256\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T00:17:41.083Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
