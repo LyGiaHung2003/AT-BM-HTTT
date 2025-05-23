@@ -71,6 +71,61 @@ namespace Hash_SHA_256
             return sb.ToString();
         }
 
+        public static byte[] ComputeSHA256Bytes(string input)
+        {
+            byte[] message = Encoding.UTF8.GetBytes(input);
+            uint[] hash = (uint[])H.Clone();
+            byte[] paddedMessage = PadMessage(message);
+            int blocks = paddedMessage.Length / 64;
+
+            for (int i = 0; i < blocks; i++)
+            {
+                uint[] w = new uint[64];
+                for (int j = 0; j < 16; j++)
+                {
+                    w[j] = BitConverter.ToUInt32(paddedMessage, (i * 64) + (j * 4));
+                    w[j] = SwapEndian(w[j]);
+                }
+
+                for (int j = 16; j < 64; j++)
+                {
+                    uint s0 = RotateRight(w[j - 15], 7) ^ RotateRight(w[j - 15], 18) ^ (w[j - 15] >> 3);
+                    uint s1 = RotateRight(w[j - 2], 17) ^ RotateRight(w[j - 2], 19) ^ (w[j - 2] >> 10);
+                    w[j] = w[j - 16] + s0 + w[j - 7] + s1;
+                }
+
+                uint a = hash[0], b = hash[1], c = hash[2], d = hash[3];
+                uint e = hash[4], f = hash[5], g = hash[6], h = hash[7];
+
+                for (int j = 0; j < 64; j++)
+                {
+                    uint S1 = RotateRight(e, 6) ^ RotateRight(e, 11) ^ RotateRight(e, 25);
+                    uint ch = (e & f) ^ (~e & g);
+                    uint temp1 = h + S1 + ch + K[j] + w[j];
+                    uint S0 = RotateRight(a, 2) ^ RotateRight(a, 13) ^ RotateRight(a, 22);
+                    uint maj = (a & b) ^ (a & c) ^ (b & c);
+                    uint temp2 = S0 + maj;
+
+                    h = g; g = f; f = e; e = d + temp1;
+                    d = c; c = b; b = a; a = temp1 + temp2;
+                }
+
+                hash[0] += a; hash[1] += b; hash[2] += c; hash[3] += d;
+                hash[4] += e; hash[5] += f; hash[6] += g; hash[7] += h;
+            }
+
+            // Chuyển từ uint[] thành byte[]
+            byte[] result = new byte[32];
+            for (int i = 0; i < hash.Length; i++)
+            {
+                byte[] bytes = BitConverter.GetBytes(SwapEndian(hash[i]));
+                Array.Copy(bytes, 0, result, i * 4, 4);
+            }
+
+            return result;
+        }
+
+
         private static byte[] PadMessage(byte[] message)
         {
             int originalLength = message.Length;
