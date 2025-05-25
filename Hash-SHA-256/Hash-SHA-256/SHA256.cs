@@ -113,17 +113,21 @@ namespace Hash_SHA_256
                 hash[0] += a; hash[1] += b; hash[2] += c; hash[3] += d;
                 hash[4] += e; hash[5] += f; hash[6] += g; hash[7] += h;
             }
+            return ConvertHashToBytes(hash);
 
-            // Chuyển từ uint[] thành byte[]
-            byte[] result = new byte[32];
+        }
+
+        public static byte[] ConvertHashToBytes(uint[] hash)
+        {
+            byte[] result = new byte[hash.Length * 4];
             for (int i = 0; i < hash.Length; i++)
             {
                 byte[] bytes = BitConverter.GetBytes(SwapEndian(hash[i]));
                 Array.Copy(bytes, 0, result, i * 4, 4);
             }
-
             return result;
         }
+
 
 
         private static byte[] PadMessage(byte[] message)
